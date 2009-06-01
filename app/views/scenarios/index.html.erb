@@ -1,0 +1,9 @@
+<% title "Running Games" %>
+
+<% for scenario in @scenarios %>
+    <%= link_to scenario.name, scenario%>
+    <%= h scenario.description %>
+    <%= h scenario.created_by %>
+<% end %>
+
+<p><%= link_to "New Scenario", new_scenario_path %></p>

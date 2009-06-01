@@ -1,0 +1,20 @@
+<% title "Scenario" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @scenario.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @scenario.description %>
+</p>
+<p>
+  <strong>Creator:</strong>
+  <%=h @scenario.created_by %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_scenario_path(@scenario) %> |
+  <%= link_to "Destroy", @scenario, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", scenarios_path %>
+</p>
