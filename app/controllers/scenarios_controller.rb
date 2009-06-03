@@ -13,7 +13,8 @@ class ScenariosController < ApplicationController
 
   def create
     @scenario = Scenario.new(params[:scenario])
-     if @scenario.save
+     @scenario.created_by = current_user.username
+    if @scenario.save
       flash[:notice] = "Successfully created scenario."
       redirect_to @scenario
     else
