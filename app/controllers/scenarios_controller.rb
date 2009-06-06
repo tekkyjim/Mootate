@@ -1,4 +1,6 @@
 class ScenariosController < ApplicationController
+  navigation :books
+  
   def index
     @scenarios = Scenario.all
   end

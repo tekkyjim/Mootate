@@ -1,0 +1,11 @@
+-title "Games"
+.scenario_list
+  -for scenario in @scenarios
+    .scenario{:scenario => "scenario#{scenario.id}"}
+      %strong
+        =link_to scenario.name, scenario
+      = "Description  #{scenario.description}"
+      = "Created By #{scenario.created_by}"
+-if current_user != nil
+  =link_to "New Scenario", new_scenario_path
+

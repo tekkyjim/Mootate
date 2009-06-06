@@ -1,7 +1,7 @@
 Feature:
     In Order to manage my Scenarios
     As a User
-    I want to be able to create and delete Scenarios
+    I want to be able to manage Scenarios
 
 
     Background:
@@ -9,6 +9,7 @@ Feature:
             | username  | password  | admin |
             | bob       | secret    | false |
             | admin     | secret    | true  |
+            | harry     | secret    | false |
     Scenario: Should not be able to make scenario when not logged in
         When I go to the scenarios page
         Then I should not see "New Scenario"
