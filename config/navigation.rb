@@ -16,6 +16,10 @@ SimpleNavigation::Configuration.run do |navigation|
     # options - can be used to specify attributes that will be included in the rendered navigation item (e.g. id, class etc.)
     #
     primary.item :scenarios, 'Games', scenarios_path
+    primary.item :scenarios, 'Games', scenarios_path
+    primary.item :scenarios, 'Games', scenarios_path
+    primary.item :scenarios, 'Games', scenarios_path
+    primary.item :scenarios, 'Games', scenarios_path
     primary.item :secret, 'Secret Menu', scenarios_path ,:unless => Proc.new { current_user == nil }
     # Add an item which has a sub navigation (same params, but with block)
   #  primary.item :key_2, 'name', url, options do |sub_nav|
