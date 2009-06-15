@@ -12,6 +12,7 @@ module NavigationHelpers
       '/'
       when /the scenarios page/
         scenarios_path
+    
     # Add more mappings here.
     # Here is a more fancy example:
     #

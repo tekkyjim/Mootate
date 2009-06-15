@@ -1,0 +1,15 @@
+-form_for @scenario do |f|
+  =f.error_messages
+  %p
+    =f.label :GameName
+    =f.text_field :GameName
+  %p
+    =f.label :GameDescription
+    =f.text_area :GameDescription
+  %p
+    =f.label :EntryType
+    =f.select :EntryType, [["Open", true], ["Locked", false]]
+  %p
+    -f.label :created_by
+    =f.hidden_field :created_by, :value => current_user.username
+  %p=f.submit "Submit"

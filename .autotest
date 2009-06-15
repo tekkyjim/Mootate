@@ -1,0 +1,7 @@
+require 'rubygems'
+
+Autotest.add_hook :initialize do |at|
+  # Ignore files in tmp/
+  at.add_exception %r%^\./tmp%
+end
+

@@ -2,10 +2,15 @@
 #scenario_list
   -for scenario in @scenarios
     #scenario{:scenario => "scenario#{scenario.id}"}
-      #name
-        =link_to scenario.name, scenario
-      #description
-        %p= "Description  #{scenario.description}"
+      #EntryType
+        -if scenario.EntryType == true
+          [Open Padlock IMG]
+        -else
+          [Closed Padlock IMG]
+      #GameName
+        =link_to scenario.GameName, scenario
+      #GameDescription
+        %p= "Description  #{scenario.GameDescription}"
       #created_by
         = "Created By #{scenario.created_by}"
 -if current_user != nil
