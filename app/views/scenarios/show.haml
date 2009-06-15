@@ -1,0 +1,19 @@
+- title "Scenario"
+%p
+  %strong
+    Name:
+  = h @scenario.GameName
+%p
+  %strong
+    Description:
+  = h @scenario.GameDescription
+%p
+  %strong
+    Creator:
+  = h @scenario.created_by
+%p
+  = link_to "Edit", edit_scenario_path(@scenario)
+  |
+  = link_to "Destroy", @scenario, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", scenarios_path
