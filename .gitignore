@@ -1,0 +1,8 @@
+log/*.log
+tmp/**/*
+.idea
+app/stylesheets/.sass-cache
+public/stylesheets/compiled
+coverage.data
+coverage
+generate
