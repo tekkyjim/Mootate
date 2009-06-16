@@ -6,7 +6,6 @@
     /[if IE]
     =stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
     %title=h(yield(:title) || "Untitled")
-    =stylesheet_link_tag 'application'
     =yield(:head)
   %body
     #container
